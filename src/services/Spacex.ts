@@ -11,5 +11,5 @@ export const getNextLaunch = async () => {
 // Récupération des 10 derniers lancements
 export const getPastLaunches = async () => {
     const response = await axios.get(`${API_URL}/past`);
-    return response.data.slice(-10).reverse();
+    return response.data.slice(-20).reverse();
 };
